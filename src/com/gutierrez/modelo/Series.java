@@ -3,32 +3,66 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.ayo.modelo;
+package com.gutierrez.modelo;
 
 /**
  *
  * @author LAB4-PC7
  */
-public class Chapter  {
+public class Series {
+    private int sessionQuantity;
+    private char Chapters;
     private int id;
     private int duration;
     private int timeViewed;
     private String title;
+    private String genero;
+    private String creator;
     private short year;
     private boolean viewed;
-    private int sessionNumber;
 
-    public Chapter() {
+    public Series() {
     }
 
-    public Chapter(int id, int duration, int timeViewed, String title, short year, boolean viewed, int sessionNumber) {
+    public Series(int sessionQuantity, char Chapters, int id, int duration, int timeViewed, String title, String genero, String creator, short year, boolean viewed) {
+        this.sessionQuantity = sessionQuantity;
+        this.Chapters = Chapters;
         this.id = id;
         this.duration = duration;
         this.timeViewed = timeViewed;
         this.title = title;
+        this.genero = genero;
+        this.creator = creator;
         this.year = year;
         this.viewed = viewed;
-        this.sessionNumber = sessionNumber;
+    }
+
+    /**
+     * @return the sessionQuantity
+     */
+    public int getSessionQuantity() {
+        return sessionQuantity;
+    }
+
+    /**
+     * @param sessionQuantity the sessionQuantity to set
+     */
+    public void setSessionQuantity(int sessionQuantity) {
+        this.sessionQuantity = sessionQuantity;
+    }
+
+    /**
+     * @return the Chapters
+     */
+    public char getChapters() {
+        return Chapters;
+    }
+
+    /**
+     * @param Chapters the Chapters to set
+     */
+    public void setChapters(char Chapters) {
+        this.Chapters = Chapters;
     }
 
     /**
@@ -88,6 +122,34 @@ public class Chapter  {
     }
 
     /**
+     * @return the genero
+     */
+    public String getGenero() {
+        return genero;
+    }
+
+    /**
+     * @param genero the genero to set
+     */
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    /**
+     * @return the creator
+     */
+    public String getCreator() {
+        return creator;
+    }
+
+    /**
+     * @param creator the creator to set
+     */
+    public void setCreator(String creator) {
+        this.creator = creator;
+    }
+
+    /**
      * @return the year
      */
     public short getYear() {
@@ -114,24 +176,13 @@ public class Chapter  {
     public void setViewed(boolean viewed) {
         this.viewed = viewed;
     }
+    
+    
 
-    /**
-     * @return the sessionNumber
-     */
-    public int getSessionNumber() {
-        return sessionNumber;
-    }
+    
+    
+    
 
-    /**
-     * @param sessionNumber the sessionNumber to set
-     */
-    public void setSessionNumber(int sessionNumber) {
-        this.sessionNumber = sessionNumber;
-    }
-    
-    
-    
-    
     
     
 }
