@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.ayo.vista;
+package com.gutierrez.vista;
 
-import com.ayo.controlador.Coordinador;
+import com.gutierrez.controlador.Coordinador;
 
 /**
  *

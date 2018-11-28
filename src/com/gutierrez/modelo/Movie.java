@@ -3,15 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.ayo.modelo;
+package com.gutierrez.modelo;
 
 /**
  *
  * @author LAB4-PC7
  */
-public class Series {
-    private int sessionQuantity;
-    private char Chapters;
+public class Movie {
+    
     private int id;
     private int duration;
     private int timeViewed;
@@ -21,12 +20,10 @@ public class Series {
     private short year;
     private boolean viewed;
 
-    public Series() {
+    public Movie() {
     }
 
-    public Series(int sessionQuantity, char Chapters, int id, int duration, int timeViewed, String title, String genero, String creator, short year, boolean viewed) {
-        this.sessionQuantity = sessionQuantity;
-        this.Chapters = Chapters;
+    public Movie(int id, int duration, int timeViewed, String title, String genero, String creator, short year, boolean viewed) {
         this.id = id;
         this.duration = duration;
         this.timeViewed = timeViewed;
@@ -35,34 +32,6 @@ public class Series {
         this.creator = creator;
         this.year = year;
         this.viewed = viewed;
-    }
-
-    /**
-     * @return the sessionQuantity
-     */
-    public int getSessionQuantity() {
-        return sessionQuantity;
-    }
-
-    /**
-     * @param sessionQuantity the sessionQuantity to set
-     */
-    public void setSessionQuantity(int sessionQuantity) {
-        this.sessionQuantity = sessionQuantity;
-    }
-
-    /**
-     * @return the Chapters
-     */
-    public char getChapters() {
-        return Chapters;
-    }
-
-    /**
-     * @param Chapters the Chapters to set
-     */
-    public void setChapters(char Chapters) {
-        this.Chapters = Chapters;
     }
 
     /**
@@ -177,12 +146,5 @@ public class Series {
         this.viewed = viewed;
     }
     
-    
-
-    
-    
-    
-
-    
-    
+       
 }

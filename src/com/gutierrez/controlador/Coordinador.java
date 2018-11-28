@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.ayo.controlador;
+package com.gutierrez.controlador;
 
 import java.util.Scanner;
 
@@ -33,7 +33,9 @@ public class Coordinador {
                     //salir
                     break;
                 case 1:
-                    showBooks();
+                    //showBooks();
+                    
+                    
                     break;
                 case 2:
                     showMagazine();
@@ -100,6 +102,9 @@ public class Coordinador {
             System.out.println("--MAGAZINES--");
             System.out.println("");
         } while (exit !=0);
+    }
+    public void Coordinador(){
+        
     }
     
     

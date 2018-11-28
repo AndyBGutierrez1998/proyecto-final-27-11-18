@@ -3,35 +3,32 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.ayo.modelo;
+package com.gutierrez.modelo;
 
 /**
  *
  * @author LAB4-PC7
  */
-public class Movie {
-    
+public class Chapter  {
     private int id;
     private int duration;
     private int timeViewed;
     private String title;
-    private String genero;
-    private String creator;
     private short year;
     private boolean viewed;
+    private int sessionNumber;
 
-    public Movie() {
+    public Chapter() {
     }
 
-    public Movie(int id, int duration, int timeViewed, String title, String genero, String creator, short year, boolean viewed) {
+    public Chapter(int id, int duration, int timeViewed, String title, short year, boolean viewed, int sessionNumber) {
         this.id = id;
         this.duration = duration;
         this.timeViewed = timeViewed;
         this.title = title;
-        this.genero = genero;
-        this.creator = creator;
         this.year = year;
         this.viewed = viewed;
+        this.sessionNumber = sessionNumber;
     }
 
     /**
@@ -91,34 +88,6 @@ public class Movie {
     }
 
     /**
-     * @return the genero
-     */
-    public String getGenero() {
-        return genero;
-    }
-
-    /**
-     * @param genero the genero to set
-     */
-    public void setGenero(String genero) {
-        this.genero = genero;
-    }
-
-    /**
-     * @return the creator
-     */
-    public String getCreator() {
-        return creator;
-    }
-
-    /**
-     * @param creator the creator to set
-     */
-    public void setCreator(String creator) {
-        this.creator = creator;
-    }
-
-    /**
      * @return the year
      */
     public short getYear() {
@@ -145,6 +114,24 @@ public class Movie {
     public void setViewed(boolean viewed) {
         this.viewed = viewed;
     }
+
+    /**
+     * @return the sessionNumber
+     */
+    public int getSessionNumber() {
+        return sessionNumber;
+    }
+
+    /**
+     * @param sessionNumber the sessionNumber to set
+     */
+    public void setSessionNumber(int sessionNumber) {
+        this.sessionNumber = sessionNumber;
+    }
     
-       
+    
+    
+    
+    
+    
 }
